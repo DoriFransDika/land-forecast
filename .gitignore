@@ -1,25 +1,49 @@
-# Logs
-logs
+# Root & OS
+.DS_Store
+Thumbs.db
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+.idea/
 
+# Frontend (React)
+frontend-react/node_modules/
+frontend-react/dist/
+frontend-react/dist-ssr/
+frontend-react/*.local
+frontend-react/*.tsbuildinfo
+frontend-react/.env
+frontend-react/.env*.local
+
+# Backend (Laravel)
+backend-laravel/vendor/
+backend-laravel/node_modules/
+backend-laravel/.env
+backend-laravel/.env.backup
+backend-laravel/.env.production
+backend-laravel/storage/*.key
+backend-laravel/public/storage
+backend-laravel/public/hot
+backend-laravel/bootstrap/cache/
+backend-laravel/storage/framework/cache/*
+backend-laravel/storage/framework/sessions/*
+backend-laravel/storage/framework/views/*
+backend-laravel/storage/logs/*
+
+# Backend AI (FastAPI / Python)
+backend-ai/venv/
+backend-ai/.venv/
+**/__pycache__/
+*.py[cod]
+backend-ai/.env
+backend-ai/weights/*.pt
+backend-ai/weights/*.pth
+backend-ai/weights/*.pkl
+backend-ai/data_raw/
+backend-ai/staging/
+backend-ai/outputs/
+backend-ai/temp/
+backend-ai/*.tif
+backend-ai/*.geotiff
+backend-ai/*.geojson
+backend-ai/*.shp
